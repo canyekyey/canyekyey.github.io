@@ -1,0 +1,1094 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 300;
+    color: #2C2B2B;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.header {
+    background-image: url(../images/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    max-height: 700px;
+    color: #fff;
+    
+}
+
+.container {
+    max-width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.header_top {
+    padding: 47px 0 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 105px;
+
+}
+
+.logo {}
+
+.logo_img {}
+
+.number {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 53.35px;
+    text-transform: uppercase;
+}
+
+.header_content {
+    padding-top: 60px;
+    position: relative;
+}
+
+.header_title {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 107px;
+    text-transform: uppercases;
+
+
+}
+
+.header_subtitle {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 53px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.header_descr {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 30px;
+    max-width: 800px;
+
+}
+
+.header_btn {
+    transition: all .5s;
+    width: 250px;
+    height: 50px;
+    left: 200px;
+    top: 436px;
+    background-color: #5A0D67;
+}
+
+.header_btn:hover {
+    color: #5A0D67;
+    background-color: #fff;
+}
+
+.btn_text {
+    padding-top: 10px;
+    text-align: center;
+}
+
+._icons {
+    padding: 70px 0 20px 70px;
+    display: flex;
+    align-items: center;
+
+}
+
+.icons_link {
+    margin-right: 5px;
+}
+
+.picture_machine {}
+
+.musttang {
+    position: absolute;
+    right: 0;
+    bottom: -265px;
+}
+
+.back_header {}
+
+
+
+
+.services {
+    font-family: 'Oswald', sans-serif;
+    padding-top: 350px;
+
+}
+
+.container {}
+
+.services_title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 54px;
+    color: #21062A;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.services_title::after {
+    content: '';
+    height: 3px;
+    width: 80px;
+    background-color: #21062A;
+    position: absolute;
+    top: 25px;
+    margin-left: 20px;
+}
+
+.services_inner {
+    display: flex;
+
+}
+
+.services_content {
+    width: 505px;
+    margin-right: 96px;
+}
+
+.question {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    color: #5A0D67;
+    margin-bottom: 12px;
+    font-family: 'Oswald';
+}
+
+.services_descr {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    color: #2C2B2B;
+    margin-right: 96px;
+    margin-bottom: 12px;
+    font-family: 'Oswald';
+    margin-bottom: 35px;
+}
+
+.button_decor {
+    margin-top: -7px;
+    transition: all .5s;
+    background-color: #5A0D67;
+    text-align: center;
+    margin-top: 50px;
+    color: #fff;
+    padding-top: 10px;
+    position: relative;
+    width: 250px;
+    height: 50px;
+}
+
+.button_decor:hover {
+    color: #5A0D67;
+    background-color: #fff;
+}
+
+.button_decor::after {
+    content: 'ЖМИ';
+    color: #C4C4C4;
+    position: absolute;
+    margin-left: 130px;
+}
+
+.button_decor::before {
+    content: '';
+    width: 80px;
+    height: 2px;
+    background-color: #C4C4C4;
+    position: absolute;
+    right: -72px;
+    top: 24px;
+}
+
+.services_list {
+    list-style: none;
+    counter-reset: my-counter;
+    color: #000;
+}
+
+.services_item {
+    counter-increment: my-counter;
+    border: 1px solid #C4C4C4;
+    margin-bottom: 12px;
+    width: 450px;
+    padding: 10px 100px 10px 113px;
+    position: relative;
+    transition: all .5s;
+}
+
+.services_item::before {
+    content: '0' counter(my-counter);
+    position: absolute;
+    color: #C4C4C4;
+    font-size: 36px;
+    line-height: 54px;
+    font-weight: 400;
+    transform: rotate(270deg);
+    left: 20px;
+
+}
+
+.services_item:hover {
+    border: 1px solid #5A0D67;
+    width: 500px;
+    transition: all .5s;
+
+}
+
+.services_item:hover .services_item_title {
+    color: #5A0D67;
+}
+
+.services_item:hover::before {
+    color: #5A0D67;
+}
+
+.services_item_title {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.services_item_text {}
+
+.benefits {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.container {}
+
+.benefits_inner {
+    display: flex;
+
+}
+
+.benefits_car {
+    margin-right: 95px;
+}
+
+.benefits_content {
+    width: 100%;
+}
+
+.benefits_title {
+    margin-left: 185px;
+    color: #21062A;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 53spx;
+    font-family: 'Oswald';
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.benefits_title::after {
+    content: '';
+    height: 2px;
+    width: 80px;
+    background-color: #21062A;
+    position: absolute;
+    margin-top: 13px;
+    margin-left: 15px;
+}
+
+.benefits_list {
+    background-color: #21062A;
+    padding-top: 25px;
+    padding-left: 185px;
+    padding-right: 285px;
+    padding-bottom: 25px;
+    padding: 25px 0 25px 185px;
+    list-style: none;
+    color: #fff;
+}
+
+.benefits_item {
+    width: 320px;
+
+}
+
+.benefits_item_num {
+    font-family: 'Oswald';
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 53px;
+}
+
+.benefits_item_title {
+    font-family: 'Oswald';
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 35px;
+}
+
+.benefits_item_text {
+    font-family: 'Oswald';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+    color: #C4C4C4;
+}
+
+.sliders {
+    margin-top: 100px;
+}
+
+.container {}
+
+.slider_title {
+    color: #21062A;
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 53px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.slider_title::after {
+    content: '';
+    height: 2px;
+    width: 80px;
+    background-color: #21062A;
+    position: absolute;
+    margin-top: 23px;
+    margin-left: 10px;
+}
+
+.slider_inner {
+    margin: 0 -7px;
+}
+
+.slider_item {
+    margin: 0 7px;
+
+
+}
+
+.slider_item_box {
+    padding: 6px 6px 16px 6px;
+    text-align: center;
+    border: #C4C4C4 1px solid;
+}
+
+
+
+
+.slider_image {
+    width: 100%;
+}
+
+.slider_item_title {
+    margin-top: 23px;
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #2C2B2B;
+}
+
+.slider_item_text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    color: #2C2B2B;
+
+    margin-bottom: 11px;
+}
+
+.slider_item_box:hover {
+    color: #fff;
+    transition: all .5s;
+    background-color: #5A0D67;
+    border-color: #5A0D67;
+}
+
+.sliders .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    list-style: none;
+}
+
+.sliders .slick-dots button {
+    font-size: 0;
+    border: none;
+    padding: 0;
+    margin: 0px 10px;
+    background-color: #c4c4c4;
+    width: 50px;
+    height: 1px;
+}
+
+.sliders .slick-active button {
+    background-color: #5A0D67;
+    height: 3px;
+}
+
+.hooter {
+    margin-top: 100px;
+    font-family: 'Oswald';
+
+}
+
+.hooter_inner {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.contact {
+    margin-top: 50px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 53px;
+    color: #21062A;
+    margin-bottom: 50px;
+}
+
+.contact::after {
+    content: '';
+    height: 3px;
+    width: 80px;
+    background-color: #21062A;
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+.contact_info {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+
+}
+
+.contact_info_1 {
+    color: #5A0D67;
+    margin-top: 20px;
+}
+
+.contact_info_2 {
+    color: #2C2B2B;
+    margin-right: 100px;
+}
+
+.contact_info_3 {
+    color: #2C2B2B;
+}
+
+.hooter_item {
+    text-align: center;
+}
+
+.hooter_info {
+    
+    font-family: 'Oswald';
+    background-color: #21062A;
+    display: block;
+    width: 600px;
+    height: 466px;
+    padding: 49px 156px 59px 167px;
+
+}
+
+.hooter_info_input {
+    border: 1px solid #FFFFFF;
+    width: 450px;
+    height: 75px;
+    color: #fff;
+    background-color: transparent;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.hooter_info_input::placeholder {
+    text-align: center;
+    color: #C4C4C4;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    font-family: 'Oswald';
+
+}
+
+.hooter_info_title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 53px;
+    color: white;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.hooter_info_title::after {
+    content: '';
+    height: 2px;
+    width: 80px;
+    background-color: #fff;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.hooter_info_btn {
+    margin-top: 5px;
+    transition: all .5s;
+    width: 250px;
+    height: 50px;
+    left: 200px;
+    top: 436px;
+    background-color: #5A0D67;
+    font-family: 'Oswald';
+    border: none;
+    color: white;
+}
+
+.hooter_info_btn:hover {
+
+    font-family: 'Oswald';
+
+    background-color: #fff;
+    color: #5A0D67;
+}
+
+.hoooter {
+    background-color: #21062A;
+
+
+}
+
+.hoooter_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+._icons {
+    margin-bottom: 40px;
+}
+
+.hoooter_text {
+    color: #FFFFFF;
+}
+
+@media(max-width:1090px) {
+    .services {
+        padding-top: 150px;
+    }
+
+    .services_inner {
+        flex-wrap: wrap;
+    }
+
+    .services_list {
+        order: -1;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .services_item {
+        width: 100%;
+    }
+
+    .services_item:hover {
+        width: 100%;
+    }
+
+    .services_content {
+        width: 100%;
+        margin-right: 0;
+    }
+
+}
+
+@media(max-width: 1024px) {
+    .musttang {
+        width: 80%;
+        bottom: -180px;
+
+    }
+
+    .benefits_content {
+        width: 56%;
+    }
+
+    .benefits_list {
+        padding: 20px 215px 20px 130px;
+    }
+}
+
+@media(max-width:965px) {
+    .benefits_list {
+        padding: 20px 215px 20px 70px;
+    }
+
+    .benefits_title {
+        margin-left: 110px;
+    }
+
+    .benefits_content {
+        width: 460px;
+    }
+
+    .benefits_car {
+        margin-right: 70px;
+    }
+}
+
+@media(max-width: 900px) {
+    .number {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36.35px;
+        text-transform: uppercase;
+    }
+
+    .header_title {
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 54px;
+        line-height: 74px;
+
+    }
+
+    .header_subtitle {
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 20px;
+    }
+
+    .benefits_car {
+        margin-right: 40px;
+    }
+
+    .hooter_contacts {
+        margin-bottom: 30px;
+    }
+
+    .hooter_inner {
+        display: block;
+        text-align: center;
+    }
+
+    .hooter_info {
+        width: 100%;
+    }
+
+    .contact_info_2 {
+        margin-right: 0px;
+
+
+    }
+
+    .hooter_info_btn {
+        margin-top: 40px;
+        justify-content: center;
+    }
+
+    .contact::after {
+        display: none;
+    }
+
+    .hooter_info_title::after {
+        display: none;
+    }
+
+    .contact_info {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 29px;
+    }
+
+    .contact {
+        font-weight: 700;
+        font-size: 50px;
+    }
+
+    ._icons {
+        padding: 70px 0px 20px 0px;
+    }
+
+    .hooter__logo {
+        width: 30%;
+    }
+}
+
+@media(max-width: 860px) {
+
+    .benefits_car {
+        display: none;
+    }
+
+    .benefits_inner {
+
+        text-align: center;
+    }
+
+    .benefits_content {
+        width: 800px;
+    }
+
+    .benefits_list {
+        padding: 25px 15px;
+
+    }
+
+    .benefits_item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .benefits_title {
+        margin-left: 0px;
+        font-size: 40px;
+    }
+
+    .benefits_title::after {
+        display: none;
+    }
+
+    .benefits_item_num {
+        font-family: 'Oswald';
+        font-size: 45px;
+        font-weight: 400;
+        line-height: 53px;
+    }
+
+    .hoooter_text {
+        font-family: 'Oswald';
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 600px) {
+    .header_content {
+        padding-top: 0;
+        text-align: center;
+    }
+
+    .musttang {
+        bottom: -110px;
+        width: 70%;
+    }
+
+    .header_title {
+        line-height: 74px;
+        font-size: 50px;
+    }
+
+    .header_subtitle {
+        line-height: 36px;
+        font-size: 24px;
+    }
+
+    .header_descr {
+        line-height: 18px;
+        font-size: 16px;
+        margin-top: -2px
+    }
+
+    ._icons {
+        margin-left: -15px;
+    }
+
+    .services {
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 30px;
+    }
+
+    .services_title {
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 30px;
+    }
+
+    .services_item_title {}
+
+    .services_item_text {
+        font-size: 18px;
+    }
+
+    body {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .services_item {
+        padding: 5px 15px 1px 90px;
+    }
+
+    .services_item::before {
+        top: 11px;
+    }
+
+    .button_decor {
+        font-size: 16px;
+    }
+
+    .slider_title::after {
+        display: none;
+    }
+
+    .slider_title {
+        text-align: center;
+    }
+
+    .sliders {
+        margin-top: -41px;
+    }
+
+    .sliders .slick-dots button {
+
+        width: 20px;
+        height: 5px;
+    }
+
+    .hooter_info_title {
+        margin-top: -28px;
+        font-size: 40px;
+    }
+
+    .hooter_info_input {
+        width: 300px;
+        height: 50px;
+    }
+
+    .hooter_info {
+        height: 340px;
+    }
+
+    .hooter_info_btn {
+        margin-top: 20px;
+    }
+}
+
+@media(max-width: 520px) {
+    .number {
+        font-size: 18px;
+    }
+
+    .musttang {
+        bottom: -185px;
+        left: 61px;
+
+    }
+
+    .logo {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 5px;
+        margin-top: -15px;
+    }
+
+    .header_top {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .header_title {
+        line-height: 54px;
+        font-size: 63px;
+        margin-top: -50px;
+    }
+
+    .hoooter_text {
+        font-family: 'Oswald';
+        font-size: 10px;
+    }
+    .header_subtitle {
+        line-height: 24px;
+        font-size: 22px;
+        margin-top: 24px;
+    }
+
+    ._icons {
+        justify-content: center;
+        margin-left: 8px;
+        margin-top: -5px;
+    }
+}
+
+.header {
+    max-height: 800px;
+    padding-bottom: 150px;
+}
+
+.services {
+    padding-top: 50px;
+}
+
+.services_item {
+    padding: 5px 15px 1px 55px
+}
+
+.services_item::before {
+    left: 10px;
+}
+
+.services_descr {
+    line-height: 18px;
+    width: 100%;
+}
+
+.hooter_info_input {
+    width: 210px;
+    height: 45px;
+}
+
+.hooter_info_input::placeholder {
+    font-size: 12px;
+}
+
+.hooter_info_title {
+    font-size: 34px;
+}
+
+.hooter_info_btn {
+    width: 180px;
+    height: 40px;
+}
+
+.hooter_info {
+    height: 300px;
+}
+
+.contact {
+    margin-bottom: 30px;
+}
+
+
+@media(max-width:400px) {
+    .button_decor::after {
+        content: "";
+    }
+
+    .button_decor::before {
+        height: 0px;
+    }
+
+    .button_decor {
+        width: 80%;
+    }
+
+    .services_item_text {
+        font-size: 14px;
+    }
+
+    .services_item_title {
+        font-size: 20px;
+    }
+
+    .hooter_info_title {
+        font-size: 30px;
+    }
+    .hooter__logo {
+        width: 25%;
+    }
+}
+
+@media(max-width:370px) {
+    .musttang {
+        top: 382px;
+
+    }
+
+    .header {
+        padding-bottom: 80px;
+    }
+
+    .sliders .slick-dots button {
+
+        width: 10px;
+        height: 5px;
+    }
+
+    .hooter_info_input {
+        width: 160px;
+        height: 35px;
+    }
+
+    .hooter_info_title {
+        font-size: 24px;
+    }
+
+    .hooter_info_btn {
+        width: 150px;
+        height: 35px;
+    }
+    .hoooter_inner{
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        padding: 20px 0;
+    }
+    ._icons{
+        width: 100%;
+        justify-content: center;
+        margin: 0px 0;
+        padding: 5px 0px 5px 0px;
+    
+    }
+    .hooter__logo{
+        width: 50%;
+    }
+    .hoooter_text{
+        font-size: 14px;
+    }
+}
+
+@media(max-width:340px) {
+    .musttang {
+        top: 440px;
+        left: 41px;
+    }
+
+    .header_title {
+        font-size: 56px;
+    }
+
+    .services_item_text {
+        font-size: 13px;
+    }
+
+    .services_descr {
+        line-height: 14px;
+        font-size: 16px;
+    }
+}
